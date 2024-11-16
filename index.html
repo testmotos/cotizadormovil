@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador Grupo Guevara</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+</head>
+<body>
+    
+    <form id="formulario">
+        <h1>Cotizador Planes De Pago</h1>
+        <h2>Grupo Guevara S.A. de C.V.</h2>
+        <div class="input-grupo">
+           <input type="number" id="numero1" placeholder="Ingrese precio de la motocicleta">
+           <button type="button" id="myBtnPrima" onclick="inicio()">Calcular Prima</button>
+           
+           <input type="number" id="numero2" placeholder="Ingrese prima minima">
+           <button type="button" id="myBtnPrimin">Calcular Prima Minima</button>
+        </div>
+        
+        <div class="lblcalprima">  
+            <label id="lblprima">La prima es de:</label>
+            <label class="lbltoprima" id="lbltoprima1">$0.00</label>
+            <label id="lblsaldo">Saldo $0.00 </label>
+            <label id="lblpreciom">Precio de la motocicleta $0.00</label>    
+        </div>
+        
+        <div class="input-grupo">
+            <label class="lbl00">Planes De Pago Mensual</label>
+        </div>
+        
+        <div class="input-grupo">
+            <label class="lbl03" id="lbl03_03">03 Cuotas sin intereses de $0.00</label>
+            <!--<label class="lbl03t" id="lbl03t_03t">03 cuotas s/i + traspaso de $0.00</label-->
+            <label class="lbl06" id="lbl06_06">06 Cuotas de $0.00</label>
+            <label class="lbl12" id="lbl12_12">12 Cuotas de $0.00</label>
+            <label class="lbl18" id="lbl18_18">18 Cuotas de $0.00</label>
+            <label class="lbl24" id="lbl24_24">24 Cuotas de $0.00</label>
+
+            <button id="NvaCot" type="button" class="btnnvacot">Nueva Cotizacion</button>
+        </div>  
+    </form>
+    
+    <script src="js/inicio.js"></script>
+</body>
+</html>
